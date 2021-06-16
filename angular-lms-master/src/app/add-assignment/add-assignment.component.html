@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12">
+           <h3>Please Add a new Assignment</h3>
+        </div>
+         <div class="col-12 col-md-9">
+             <form>
+                 <div class="form-group row">
+                     <label for="tname" class="col-md-2 col-form-label">Assignment Name:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="name" name="name" placeholder="Assignment Name" [(ngModel)]="name">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="designation" class="col-md-2 col-form-label">Question:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="question" name="question" placeholder="Question" [(ngModel)]="question">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                    <label for="designation" class="col-md-2 col-form-label">Subject:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" [(ngModel)]="subject">
+                    </div>
+                </div>
+                 <div class="form-group row">
+                     <div class="offset-md-2 col-md-10">
+                         <button type="submit" class="btn btn-primary" (click)="createAssignment()">Add Assignment</button>
+                     </div>
+                 </div>
+             </form>
+    
+         </div>
+          <div class="col-12 col-md">
+         </div>
+    </div>
+    </div>
+    
+    

@@ -11,6 +11,10 @@ import { AddteacherComponent } from './addteacher/addteacher.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AttemptassigmentComponent } from './attemptassigment/attemptassigment.component';
+import { AddAssigmentComponent } from './add-assigment/add-assigment.component';
+import { SubmitAssigmentComponent } from './submit-assigment/submit-assigment.component';
+import { ViewassignmentComponent } from './viewassignment/viewassignment.component';
 
 const routes: Routes = [
   {
@@ -56,7 +60,26 @@ const routes: Routes = [
   {
     path:'users',
     component:ListusersComponent
-  }
+  },
+  {
+    path:'viewassignment',
+    component:ViewassignmentComponent
+  },
+  {
+    path:'submitassignment',
+    component:SubmitAssigmentComponent
+  },
+  {
+    path:'addAssignment',
+    component:AddAssigmentComponent
+  },
+  {
+    path:'viewAttemptedassignment',
+    component:AttemptassigmentComponent
+  },
+  
+
+
 ];
 
 @NgModule({
